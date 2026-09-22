@@ -3,102 +3,135 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description" content="Gandle - Turn your fav person or anything else into doodle">
     <meta name="author" content="Nada">
+    <title>Tugas 3 HTML CSS</title>
+    <link rel="icon" href="assets/sticker gandle.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
 
-    <title>Tugas 2 HTML</title>
-
-    <link rel="icon" href="assets/favicon.png" type="image/png">
 </head>
 
 <body>
-    <header style="text-align: center;">
-        <img src="stickerGandle.png" alt="Logo Gandle" width="200">
-        <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 55px; color: #8296ec; margin: 10px;">WELCOME TO GANDLE</h1>
-        <p style="color: #6678c5; font-size: 20px; margin: 5px;">Turn your fav person or anything else into doodle</p>
+    <nav class="nav container" aria-label="Navigasi utama">
+        <a href="Nada.html">Home</a>
+        <a href="https://tally.so/r/rjMKR2" target="_blank" rel="noopener noreferrer">Buy Now</a>
+    </nav>
+
+    <header class="site-header">
+        <div class="container-header">
+            <h1>WELCOME TO GANDLE</h1>
+            <p class="header-p">Turn your fav person or anything else into doodle</p>
+        </div>
     </header>
 
-
-    <main style="max-width: 900px; margin: auto; padding: 30px;">
-        <section id="tentang" style="background-color: white; padding: 30px; margin-bottom: 30px; border-radius: 15px;">
-            <header>
-                <h2 style="color: #8296ec;">ABOUT GANDLE</h2>
-            </header>
-            <p style="text-align: left;"><b>Gandle</b> adalah gantungan kunci custom doodle art yang ada sejak masa krisis ekonomi dan keuangan 2 orang mahasiswi yang <u>terpuruk</u>, karena ekonomi di negerinya sedang diambang kematian dan kehancuran. Gandle sendiri tentunya sangat lucu dan banyak penggemar dan juga peminatnyaa, karena 2 founder nya yang juga sangat lihai menarik pembeli berdatangan, <i>sheessssh</i>
-            </p>
-            <p style="text-align: right;"><strong>YUKK BELI GANDLE SEKARANG JUGA! DIJAMIN IMUT LUCU MENGGEMASKAN</strong></p>
+    <main class="container">
+        <section class="tentang" id="tentang" aria-labelledby="judul-tentang">
+            <div class="isi-content">
+                <h2 id="judul-tentang">ABOUT GANDLE</h2>
+                <p><b>Gandle</b> adalah gantungan kunci custom doodle art yang ada sejak masa krisis ekonomi dan keuangan 2 orang mahasiswi yang <u>terpuruk</u>, karena ekonomi di negerinya sedang diambang kematian dan kehancuran. Gandle sendiri tentunya sangat lucu dan banyak penggemar  dan juga peminatnyaa, karena 2 founder nya yang juga sangatlihai menarik pembeli berdatangan, <i>sheessssh</i></p>
+                <p><strong>YUKK BELI GANDLE SEKARANG JUGA! DIJAMIN IMUT LUCU MENGGEMASKAN</strong></p>
+            </div>
         </section>
 
-        <section id="order" style="background-color: white; padding: 30px; margin-bottom: 30px; border-radius: 15px; text-align: center;">
-            <h2 style="color: #8296ec;">ORDER YOUR GANDLE</h2>
+        <section class="catalog-layout" aria-labelledby="judul-katalog">
+            <div class="catalog-content">
+                <div class="catalog-heading">
+                    <h2 id="judul-katalog">Gass buat sekarang</h2>
+                    <p>Tertarik membuat ganci doodle sendiri?</p>
+                </div>
 
-            <figure>
-                <img src="design.png" alt="Contoh desain logo Gandle" width="240">
-                <figcaption style="color: #666; margin-top: 10px;">desain Gandle</figcaption>
-            </figure>
+                <div class="card catalog-cards">
+                    <article class="catalog-card">
+                        <div class="card-content">
+                            <h3>Paket Tu.bw</h3>
+                            <figure>
+                                <img src="assets/3.png" alt="Contoh desain Gandle Paket Tu.bw" width="240">
+                                <figcaption>Desain Gandle</figcaption>
+                            </figure>
+                            <p class="deskripsi">Ganci dengan 1 karakter tidak berwarna</p>
+                            <a href="#" class="project-link">Rp12.000</a>
+                        </div>
+                    </article>
 
-            <p>Tertarik membuat ganci doodle sendiri?</p>
+                    <article class="catalog-card">
+                        <div class="card-content">
+                            <h3>Paket Tu.na</h3>
+                            <figure>
+                                <img src="assets/1.png" alt="Contoh desain Gandle Paket Tu.bw" width="240">
+                                <figcaption>Desain Gandle</figcaption>
+                            </figure>
+                            <p class="deskripsi">Ganci dengan 1 karakter berwarna</p>
+                            <a href="#" class="project-link">Rp13.000</a>
+                        </div>
+                    </article>
 
-            <a href="https://tally.so/r/rjMKR2" target="_blank" style="background-color: #8296ec; color: white; padding: 10px 20px; text-decoration: none; border-radius: 20px;">Order Here!!</a>
-        </section>
+                    <article class="catalog-card">
+                        <div class="card-content">
+                            <h3>Paket Wa.bw</h3>
+                            <figure>
+                                <img src="assets/4.png" alt="Contoh desain Gandle Paket Tu.bw" width="240">
+                                <figcaption>Desain Gandle</figcaption>
+                            </figure>
+                            <p class="deskripsi">Ganci dengan 2 karakter tidak berwarna</p>
+                            <a href="#" class="project-link">Rp18.000</a>
+                        </div>
+                    </article>
 
-        <section id="list" style="background-color: white; padding: 30px; margin-bottom: 30px; border-radius: 15px;">
-            <h2 style="color: #8296ec;">PAKET GANDLE</h2>
-            <h3>Paket.Tu</h3>
-            <p>Gandle 1 karakter doodle</p>
-            <ul>
-                <li>Paket.Tugrey</li>
-                <li>Paket.Tuna</li>
-            </ul>
+                    <article class="catalog-card">
+                        <div class="card-content">
+                            <h3>Paket Tu.bw</h3>
+                            <figure>
+                                <img src="assets/5.png" alt="Contoh desain Gandle Paket Tu.bw" width="240">
+                                <figcaption>Desain Gandle</figcaption>
+                            </figure>
+                            <p class="deskripsi">Ganci dengan 2 karakter berwarna</p>
+                            <a href="#" class="project-link">Rp21.000</a>
+                        </div>
+                    </article>
+                </div>
 
-            <h3>Paket.Wa</h3>
-             <p>Gandle 2 karakter doodle</p>
-            <ol>
-                <li>Paket.Wagrey</li>
-                <li>Paket.Wana</li>
-            </ol>
-        </section>
-
-        <section id="table" style="background-color: white; padding: 30px; margin-bottom: 30px; border-radius: 15px;">
-            <h2 style="color: #8296ec;">PRICE LIST GANDLE</h2>
-            <table border="1" cellpadding="8" cellspacing="0" width="100%" style="background-color: white;">
-                <thead>
-                    <tr style="background-color: #e9edff;">
-                        <th scope="col">No</th>
-                        <th scope="col">Nama Paket</th>
-                        <th scope="col">Harga Paket</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Paket.Tugrey</td>
-                        <td>Rp12.000</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Paket.Tuna</td>
-                        <td>Rp13.000</td>
-                    <tr>
-                        <td>3</td>
-                        <td>Paket.Wagrey</td>
-                        <td>Rp18.000</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Paket.Wana</td>
-                        <td>Rp21.000</td>
-                    </tr>
-                </tbody>
-            </table>
+                <section id="table" aria-labelledby="judul-harga">
+                    <div class="table">
+                    <h2 id="judul-harga">PRICE LIST GANDLE</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Nama Paket</th>
+                                <th scope="col">Harga Paket</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Paket.Tugrey</td>
+                                <td>Rp12.000</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Paket.Tuna</td>
+                                <td>Rp13.000</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Paket.Wagrey</td>
+                                <td>Rp18.000</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Paket.Wana</td>
+                                <td>Rp21.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </section>
+            </div>
         </section>
     </main>
-
-    <footer style="text-align: center; color: #6678c5;">
-        <p>&copy; 2026 Gandle - Made Nada and Nata</p>
+    <footer>
+        <p>&copy; 2026 Gandle Made by Nada and Nata</p>
     </footer>
 </body>
 </html>
