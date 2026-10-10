@@ -1,0 +1,124 @@
+:root {
+    --ink: #1f2933;
+    --muted: #5f6c7b;
+    --line: #cbd2d9;
+    --bg: #f5f7fa;
+    --accent: #6aafde;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #252323;
+    line-height: 1.6;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 24px;
+    background: #fff;
+}
+
+
+header h1 {
+    font-size: 24px;
+    color: var(--accent);
+}
+
+
+header p {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+
+main {
+    max-width: 640px;
+    margin: 20px auto;
+    padding: 0 16px 48px;
+}
+
+
+h2 {
+    font-size: 20px;
+    margin: 0 0 16px;
+}
+
+
+.label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+.cardForm[hidden] {
+    display: none;
+}
+
+
+.container {
+    margin-bottom: 12px;
+}
+
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px 10px;
+    font: inherit;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}
+
+
+input:focus, select:focus {
+    outline: 2px solid var(--accent);
+}
+
+
+.radio-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+input:disabled, select:disabled {
+    background: var(--line);
+    color: var(--muted);
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--accent);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.25;
+}
+
+button:hover {
+    background-color: #5179ce;
+    opacity: 0.8;
+}
