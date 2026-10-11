@@ -88,7 +88,7 @@ function changeShape() {
         select.id = "dropdown";
         let kosong = document.createElement("option");
         kosong.value = "";
-        kosong.innerHTML = "-- Pilih salah satu --";
+        kosong.innerHTML = "Pilih salah satu";
         select.appendChild(kosong);
 
         for (let i = 0; i < pilihan.length; i++) {
@@ -131,12 +131,19 @@ document.getElementById("btnSubmitChoiceButton").onclick = function () {
 
 document.getElementById("btnSubmitEmail").onclick = function () {
     email = document.getElementById("emailInput").value;
-
     if (email == "") {
         alert("Email tidak boleh kosong!");
         return;
     }
+
+    let polaEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!polaEmail.test(email)) {
+        alert("Format email tidak valid! Silakan masukkan ulang.");
+        return;
+    }
+
     let hasil = "Hallo, nama saya " + nama + ", email " + email + ". Saya mempunyai sejumlah " + jumlah + " pilihan yaitu " + pilihan.join(", ") + ", dan saya memilih " + terpilih + ".";
+
     document.getElementById("resultText").innerHTML = hasil;
     document.getElementById("result").hidden = false;
     document.getElementById("emailInput").disabled = true;
